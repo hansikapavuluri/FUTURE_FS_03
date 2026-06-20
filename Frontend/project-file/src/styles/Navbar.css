@@ -1,0 +1,43 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 43, 92, 0.9);
+  backdrop-filter: blur(10px);
+  padding: 1rem 2rem;
+  position:fixed;
+  width: 100vw;
+  z-index: 2;
+  flex-wrap: wrap; /* allows wrapping on small screens */
+}
+
+.logo {
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #f4d03f;
+}
+
+/* 📱 Mobile view */
+@media (max-width: 1024px) {
+  .nav-links {
+    display: none;
+  }
+ 
+}
